@@ -1,0 +1,32 @@
+Fontes dos dados:
+
+Kinesis SDK
+Kinesis Producer Library (KPL)
+Kinesis Agent
+
+Spark,
+Log4J Appenders,
+Flume,
+Kafka Connect,
+Nifi
+
+Kinesis Producer SDK - PutRecord(s)
+- PutRecord (one) PutRecords(many)
+- PutRecors use batching less Http requests
+- Use case: low throughput, higher latency, simple API, AWS Lambda
+
+Fontes administradas pela aws:
+CloudWatch Logs
+AWS IoT
+Kinesis Data Analytics
+
+Kinesis Producer Library (KPL)
+- Java ou C++
+- usado Grande performance ou processos demorados
+- mecanismo de retry 
+- Sync e Async
+
+Kinesis Agent
+- Monitora arquivos de log e envia para kinesis data stream
+- baseado em java
+- somente servidores linux

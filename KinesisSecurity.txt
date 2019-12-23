@@ -1,0 +1,4 @@
+Controles de acesso/autorizaçao sao feitos usando IAM
+KMS cripto
+Client side cripto feito manualmento e é bem dificil
+

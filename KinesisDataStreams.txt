@@ -1,0 +1,42 @@
+Kinesis
+- managed alternativo to Kafka
+- great for logs, metrics, IoT, clickstreams
+- real-time big data
+- streaming processing framework (spark, NiFi)
+- data replicated to 3 AZ
+
+Kinesis Steams: low latency streaming ingest at scale
+Kinesis Analytics: perform real-time analytics on streams using SQL
+Kinesis Firehose: load streams into S3, Redshift, ElasticSearch & Splunk
+
+
+Kinesis Streams Overview
+
+- divided in ordered Shards/Partitions
+- data retention 24 horas ou no maximo 7 dias
+- Abilidade de reprocessar os dados
+- Varias app podem consumir a mesma stream
+- Immutavel
+- Cobra por shard provisionado 
+- Records sao ordenados por shard
+
+Kinesis Steams Records
+- Data blob: pode representar qualquer coisa
+- Record Key: ajuda a agrupar records in shards, mesma key = mesmo shard, 
+- Sequence number: identificador unuco para cada record put in shard
+
+Kinesis Data Steams limits
+
+Producer:
+- 1 MB/s ou 1000 mensagens com escrite por shard
+Consumer classic
+- 2 MB/s de leitura por shard
+- 5 chamadas de api por sard
+Consumer Enhanced Fan-Out:
+- 2 MB/s de leitura
+- Sem nescessidade de chamada de api
+Retenção dos dados
+- 24 h
+- max 7 dias
+
+

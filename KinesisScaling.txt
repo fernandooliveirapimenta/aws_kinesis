@@ -1,0 +1,15 @@
+Adicionando Shardso
+- Tbm chamado de split shard
+- usado para dividir hot shards
+ex:
+shard1: de boa
+shard2: muito quente (ele será dividido em dois depois removido)
+shard3: de boa
+
+Merging shards(inverso do anterior)
+- quando tenho shards frios eles se juntam para reduzir custo
+
+- Auto staling nao é nativo de kinesis
+- é uma chamada de API UpdateShardCount
+- Pode ser implementado no Lambda
+

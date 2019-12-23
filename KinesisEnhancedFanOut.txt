@@ -1,0 +1,22 @@
+Kinesis Enhanced Fan out
+
+KCL 2.0 e AWS Lambda
+- Cada consumidor pega 2 MB/s por shard
+- Significa que 20 consumidor ira pegar 40 MB/s por shard
+- subscribe/push
+- sem 2 Mb/s de limite
+- Enhanced Fan out: HTTP/2
+- Reduz lamtencia para 70 ms
+
+Enhanced Fan-out vs Standard consumers
+
+Standard:
+- baixo numero do consumidores
+- devera tolerar 200 ms de latencia
+- baixo custo
+
+Enhanced:
+- varios consumidores para o mesmo stream
+- baixo latencia 
+- maior custo
+- limite 

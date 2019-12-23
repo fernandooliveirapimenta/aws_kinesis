@@ -1,0 +1,30 @@
+Kinesis SDK
+Kinesis Client Library (KCL)
+Kinesis Connector Library
+Spark
+Log4J Appenders
+Flume, 
+Kafka Connect
+Kinesis Firehose
+AWS Lambda
+Kinesis Consumer Enhanced Fan out
+
+
+SDK - GetRecords
+- Max 5 chamadas de API  GetRecors por shard e por segundo = 200ms latencia
+- Se existirem 5 consumers para o mesmo shard, cada consumer recebera menos que 400 Kb/s
+
+
+Kinesis client Library (KCL)
+- Java ou outras linguagens
+
+Kinesis Connector Library
+- Java
+- Ecrever em S3, Dynamodb, Redshift, Elastic
+- Kinesis firehose substitui o connector library por alguns desses alvos o Lambda pelos outros.
+
+AWS Lambda abastecido pelo kinesis
+- Kinesis Data Streams para o lambda
+- Usado como uma leve ETL para s3, dynamodb, redshift, elastic e qualquer outro.
+
+

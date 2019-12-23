@@ -1,0 +1,44 @@
+Serviço totalmente gerenciado
+Perto de real time(60 s de latencia minima para nao full batches)
+Carrega o dado para , s3, redshift, elastic, splunk
+automatic scaling
+Data conversao Json para parquet/ ORc somente para s3
+Transformacao de dados
+suporta compresao quando alvo é s3,
+
+
+fontes de dados:
+SDK (Kinesis producer library (KPL))
+Kinesis Agent
+Kinesis Data Streams
+Cloudwatch Logs & Events
+Iot rules actions
+
+Firehose:
+Pode usar Lambda para transformacoes de dados
+
+destino:
+s3, redshift, elastic, splunk
+
+
+Firehose Buffer Sizing
+- Firehose acumula registros em um buffer
+- o buffer é descarregado  por uma regra de  tempo ou tamanho
+- High throughput - size
+- Low throughput - time
+
+Kinesis Data Streams vs Firehose
+
+Streams:
+- devera escrever codigos para produzir e para consumir
+- real time ( 200 ms latencia para classico, 70 ms para enhanced fan-out)
+- Devera adminstrar manualmente o scaling 
+- Data Storage de 1 á 7 dias, capacidade de replay, multiplos consumers
+- usado com lambda para inserir dados em real-timer to elasticsearch por exemplo
+
+Firehose:
+- totalmente gerenciado, para enviar pro s3, splunk, redshift, elastico
+- serverless transformacao com lambda
+- perto de real time (o menor tempo de buffer é de 1 minuto)
+- scaling automatico
+- Sem armazenamento de dados
