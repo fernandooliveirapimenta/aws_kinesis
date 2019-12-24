@@ -1,0 +1,28 @@
+
+sorce db -> ec2 instance rodando DMS (database migration service) -> target Db
+
+oracle -> oracle
+msql -> oreacle
+
+
+sources:
+On-Premise, Ec2 instances, Oracle, Ms sql server, Mysql, MariaDB, PostgreSQL, MongoDB, SAP, DB2.
+Azure: Azure sql Databas
+Amazon RDS: all including Aurora
+Amazon S3
+
+targets:
+On-Premise, Ec2 instances, Oracle, Ms sql server, Mysql, MariaDB, PostgreSQL, SAP.
+Amazon RDS
+Redshifto
+dynamodb
+s3
+elasticSearch
+Kinesis Data Stream
+DocumentDB
+
+AWS schema conversion TOOL (sct)o
+ex OLTP (sql server or oracle to mysql, pgsql, aurora
+ex Olap (teradata or oracle) to redshift
+
+
