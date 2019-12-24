@@ -1,0 +1,16 @@
+Kinesis DS:
+- Dado pode ser consumido varias vezes
+- Dado é deletado após o periodo de retencao
+- Order dos registros é preservado
+- many app lendo do mesmo stream
+- Streaming MapReduce query
+- 
+
+SQS:
+- Filas desacoplam app
+- um app por fila
+- Registros sao deletados depois de consumidos (ack/fail)
+- Msg sao processadas independente para standard
+- Ordenadas para FIFO
+- Delay opcional
+
