@@ -1,0 +1,1 @@
+server logs -> Kinesis Data Stream -> Kinesis Analytics -> Kinesis Data Stream -> AWS Lambda -> SNS

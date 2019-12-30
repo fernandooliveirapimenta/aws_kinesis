@@ -1,0 +1,20 @@
+AWS Kinesis Data Analytics:
+Forma mais facil de analisar dados de streaming.
+
+Principais casos de uso:
+Streaming ETL (tempo quase real)
+Gerecao de metrica continua
+Trabalho analitico
+
+Kinesis Data Streams  -> Kinesis Data Analytics -> Analytics Tools
+Kinesis Data Firehose -> Kinesis Data Analytics -> Analytics Tools
+
+
+Kinesis Data Streams -> Input Streams -> Kinesis Data Analytics[select stream ItemId, count(*) fromSourceStream group by ItemID;] -> Output Streams -> Kinesis Data Stream -> S3
+
+Kinesis Data Firehose -> Input Streams -> Kinesis Data Analytics[select stream ItemId, count(*) fromSourceStream group by ItemID;] -> Output Streams -> Kinesis Data Stream -> S3
+
+S3 -> Reference table -> Kinesis Data Analytics[select stream ItemId, count(*) fromSourceStream group by ItemID;] -> Output Streams -> Kinesis Data Firehose -> Redshift
+
+
+

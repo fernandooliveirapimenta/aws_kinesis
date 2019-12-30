@@ -1,0 +1,4 @@
+Pague somente pelos recursos consumidos
+Serverless escala automaticamente
+permissoes IAM para acessar fontes de streaming e os destinos
+Schema discovery

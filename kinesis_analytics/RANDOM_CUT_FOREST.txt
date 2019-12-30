@@ -1,0 +1,3 @@
+funcao SQL usado para detecçao de anomalia em colunas numericas de um stream
+
+ex: detectar anomalia sbway corredor durande maratona de nova york
