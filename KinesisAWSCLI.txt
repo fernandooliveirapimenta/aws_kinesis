@@ -1,0 +1,6 @@
+aws kinesis list-streams --profile u2
+aws kinesis describe-stream --stream-name topicSmDomainEvents --profile u2
+aws kinesis put-record --stream-name topicSmDomainEvents --data "carros" --partition-key usuario01 --profile u2
+aws kinesis get-shard-iterator --stream-name topicSmDomainEvents --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON --profile u2
+aws kinesis get-records --shard-iterator "AAAAAAAAAAF37T1ua0NyZAd2Cm4Satr7lQAOI//Lw0R0B7aHDa0U9mx0xA+TkwH41VMX9A5FQMPmJISKerILRMJS7TO5M5svQAnAB97aqjjnaHFOQ+kH7sTQThuktYgaS/jRFmu591rLXJfzW3Hw5aAqWDA9ADzVZ0GzJnxXnwqJqiNv3h8IF8HTT9aiSBjMVSToPOQ7Q6a8a6RmBbK9tD2ITbCnF/ECKbCaPzYcTQ5KQ3BF2oJaQQ==" --profile u2
+
